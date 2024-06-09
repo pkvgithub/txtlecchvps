@@ -34,9 +34,9 @@ async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Hi!\n\nGive /txt Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** ༺𝙅𝙊𝙃𝙉✪𝙒𝙄𝘾𝙆༻\n")
 
 
-@bot.on_message(filters.command("restart"))
+@bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
-    await m.reply_text("**Restarted**🚦", True)
+    await m.reply_text("**Stopped**🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
