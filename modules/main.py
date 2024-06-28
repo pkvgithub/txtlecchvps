@@ -148,7 +148,7 @@ async def account_login(bot: Client, m: Message):
              url =  "https://d26g5bnklkwsh4.cloudfront.net/" + id + "/master.m3u8"
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
-            name = f'{str(count).zfill(3)}) נнση ωι¢к {name1[:60]}'
+            name = f'{str(count).zfill(3)}) 𝖏𝖍𝖔𝖓 𝖜𝖎𝖈𝖐{name1[:60]}'
 
             if "youtu" in url:
                 ytf = f"b[height<={raw_text2}][ext=mp4]/bv[height<={raw_text2}][ext=mp4]+ba[ext=m4a]/b[ext=mp4]"
@@ -165,7 +165,7 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name1} {res} .mkv\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
+                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name1} {res} .mkv\n**Batch »** {raw_text0}\n\n**Download by »** **{raw_text3}**\n\n'
                 cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} .pdf \n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
                 if "drive" in url:
                     try:
