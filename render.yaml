@@ -14,3 +14,7 @@ services:
         sync: false
       - key: API_HASH
         sync: false
+      - key: WEBHOOK
+        sync: false
+      - key: PORT
+        sync: false  # Default port value, update if needed
