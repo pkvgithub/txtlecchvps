@@ -4,7 +4,7 @@ import sys
 import json
 import time
 import asyncio
-import requests
+#import requests
 import subprocess
 
 import core as helper
